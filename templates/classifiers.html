@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phishing Detection Using Machine Learning</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap-3.3.6-dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/classifiers.css">
+
+
+</head>
+<body>
+<header>
+	<div class="container">
+		<div id="branding">
+			<h4 style="color: #ffffff; margin-bottom: 40px; font-weight: bold;">Machine Learning Based Phishing Website Detection System</h4>
+        </div>
+
+
+	</div>
+</header>
+
+<div class="dark">
+	<h2 style="color: #ffffff; font-weight: bold;">Select Classifier</h2>
+</div>
+
+
+<div class="col-md-3 col-md-offset-2" style="padding-top: 40px;">
+    <form method="post" action={{ url_for('classification_page', classifier_name='decisionTree') }}>
+    <button type="submit" class="btn btn-primary">Decision Tree</button>
+    </form>
+</div>
+
+<div class="col-md-3 col-md-offset-2" style="padding-top: 40px;">
+    <form method="post" action={{ url_for('classification_page', classifier_name='naive_bayes') }}>
+    <button type="submit" class="btn btn-primary">Naive Bayes</button>
+    </form>
+</div>
+
+<div class="col-md-3 col-md-offset-2" style="padding-top: 40px;">
+    <form method="post" action={{ url_for('classification_page', classifier_name='RandomForest') }}>
+    <button type="submit" class="btn btn-primary">Random Forest</button>
+    </form>
+</div>
+
+
+<div class="col-md-3 col-md-offset-2" style="padding-top: 40px;">
+    <form method="post" action={{ url_for('classification_page', classifier_name='svm') }}>
+    <button type="submit" class="btn btn-primary">Support Vector Machine</button>
+    </form>
+</div>
+
+
+<div class="col-md-3 col-md-offset-2" style="padding-top: 40px;">
+    <form method="post" action={{ url_for('classification_page', classifier_name='knn') }}>
+    <button type="submit" class="btn btn-primary">K-Nearest Neighbors</button>
+    </form>
+</div>
+
+
+<div class="col-md-3 col-md-offset-2" style="padding-top: 40px;">
+    <form method="post" action={{ url_for('classification_page', classifier_name='mlp') }}>
+    <button type="submit" class="btn btn-primary">MultiLayer Perceptron</button>
+    </form>
+</div>
+
+<div class="col-md-3 col-md-offset-2" style="padding-top: 40px;">
+    <form method="post" action={{ url_for('classification_page', classifier_name='lr') }}>
+    <button type="submit" class="btn btn-primary">Logistic Regression</button>
+    </form>
+</div>
+
+
+
+<footer><p>Made With Love and Passion</p></footer>
+
+</body>
+</html>

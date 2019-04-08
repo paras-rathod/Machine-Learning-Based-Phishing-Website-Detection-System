@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phishing Detection Using Machine Learning</title>
+	<link rel="stylesheet" type="text/css" href="../static/css/home.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div id="branding">
+			<h2>Machine Learning Based Phishing Website Detection System</h2>
+        </div>
+
+		<nav>
+			<ul>
+				<li class="current"><a href={{url_for('homepage')}}>Home</a></li>
+				<!--<li><a href={{url_for('classification_page')}}>Classification</a></li>-->
+				<li><a href={{url_for('visualization_page')}}>Visualization</a></li>
+			</ul>
+		</nav>
+			
+	</div>
+</header>
+
+<section id="aboutphish">
+<div class="box">
+	<h2>About Phishing</h2>
+	<p>
+		Phishing is an attempt to obtain sensitive information such as username, passwords and credit card details often for malicious reasons by disguising as a trusworthy entity in an electronic communication.
+	</p>
+
+    <h2>{{ error }}</h2>
+</div>
+</section>
+
+<section id="info" >
+	<div class="box1">
+	<h2>Here are few tips to prevent a victim of phishing</h2>
+	<p>
+		<ol>
+			<li>Guard against spam.</li>
+			<li>communicate personal information only via phone or secure websites.</li>
+			<li>Do not click on links, download files or open attachments in email form unknown senders.</li>
+			<li>Never email personal or financial information, even if you are close with the recipient.</li>
+			<li>Beware of links in email that ask for personal information.</li>
+			<li>Protect your computer with a firewall, spam filters, anti-virus and anti-spyware softwares.</li>
+			<li>Never enter personal information in a pop up screen.</li>
+		</ol>
+	</p>
+	</div>
+</section>
+
+<section id="input_url">
+	<div class="container">
+			
+		<form class="upload" method="POST" action={{ url_for('classifier_page') }}>
+		<h3>Enter URL</h3>
+			<input type="URL" name="URL" placeholder="Enter URL...">
+			<input class="" type="submit" value="submit">
+		</form>
+
+		<form class="upload" action="" method="post" enctype="multipart/form-data">
+			Or Select file to upload:
+			<input type="file" name="filetoupload" id="filetoupload">
+			<input type="submit" name="submit" value="Upload File">
+		</form>
+	</div>
+</section>
+
+
+<footer><p>Made With Love and Passion</p></footer>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+body
+{
+	font: -webkit-control;
+	padding: 0;
+	margin: 0;
+}
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul
+{
+  margin:0;
+  padding:0;
+}
+
+header
+{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  //text-transform: uppercase;
+  font-size:16px;
+}
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+header #branding{
+  float:left;
+}
+
+header #branding h2{
+  margin:5px;
+}
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+table
+{
+	margin-top: 10px;
+	text-align: center;
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 80%;
+}
+
+td, th
+{
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even)
+{
+	background-color: #dddddd;
+}
+
+.dark
+{
+	margin-right: 240px;
+	background-color: #8b9dc3;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 180px;
+	text-align: center;
+	border-radius: 5px;
+
+
+}
+
+
+
+.res
+{
+	margin-right: 240px;
+/*
+	background-color: #e8491d;
+    background-color: #419641;*/
+    background-color: #f0ad4e;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 180px;
+	text-align: center;
+	border-radius: 5px;
+
+
+}
+
+.dark h3
+{
+	color: #ffffff;
+}
+.boldh th
+{
+	font-size: 16px;
+}
+button
+{
+  background-color: #cc0000; 
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    
+    display: inline-block;
+    
+    
+    cursor: pointer;
+}
+.btn
+{
+  background-color: #3cb371;
+}
+
+
+.table1
+{
+  margin-left: 180px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.table1 h3
+{
+  
+  margin-left: 350px;
+  background-color: #8b9dc3;
+  margin-right: 235px;
+  margin-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: -10px;
+  text-align: center;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  color: #ffffff;
+}
